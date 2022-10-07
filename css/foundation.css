@@ -81,7 +81,8 @@ textarea {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
-  margin: 0; }
+  margin: 0;
+}
 
 button,
 input {
@@ -2467,7 +2468,8 @@ ul.no-bullet, ol.no-bullet {
     color: #fefefe; }
   .button.secondary, .button.secondary.disabled, .button.secondary[disabled], .button.secondary.disabled:hover, .button.secondary[disabled]:hover, .button.secondary.disabled:focus, .button.secondary[disabled]:focus {
     background-color: #767676;
-    color: #fefefe; }
+    color: #fefefe; 
+  }
   .button.secondary:hover, .button.secondary:focus {
     background-color: #5e5e5e;
     color: #fefefe; }
@@ -4012,7 +4014,11 @@ a.thumbnail {
   vertical-align: middle;
   width: 20px;
   height: 16px;
-  cursor: pointer; }
+  cursor: pointer;
+  background: #ff6c6c;
+  -webkit-box-shadow: 0 7px 0 #ff6c6c, 0 14px 0 #ff6c6c;
+          box-shadow: 0 7px 0 #ff6c6c, 0 14px 0 #ff6c6c;
+}
   .menu-icon::after {
     position: absolute;
     top: 0;
@@ -4025,9 +4031,9 @@ a.thumbnail {
             box-shadow: 0 7px 0 #fefefe, 0 14px 0 #fefefe;
     content: ''; }
   .menu-icon:hover::after {
-    background: #cacaca;
-    -webkit-box-shadow: 0 7px 0 #cacaca, 0 14px 0 #cacaca;
-            box-shadow: 0 7px 0 #cacaca, 0 14px 0 #cacaca; }
+    background: #bd9696;
+    -webkit-box-shadow: 0 7px 0 #f10404, 0 14px 0 #f10404;
+            box-shadow: 0 7px 0 #f10404, 0 14px 0 #f10404; }
 
 .menu-icon.dark {
   position: relative;

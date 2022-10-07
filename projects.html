@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +8,154 @@
 </head>
 <body>
     <!-- Your page content lives here -->
-    <div class="show-for-small">
-        <!-- main content within a `grid-container` -->
-        <div class="grid-container">
-            <!-- `grid-x` represents a row -->
-            <div class="grid-x grid-padding-x">
-                <div class="cell small-3 large-6" style="background-color: #edc7b7; border: 1px solid #ac3b61" ><h4><b>Alina Kanayinkal</b></h4></div>
-                <div class="cell small-3 large-2 text-center" style="background-color: #edc7b7; font-size: 22px; border: 1px solid #ac3b61"><a href="index.html"><b>Homepage</b></a></div>
-                <div class="cell small-3 large-2 text-center" style="background-color: #edc7b7; font-size: 22px; border: 1px solid #ac3b61"><a href="resume.html"><b>Resume</b></a></div>
-                <div class="cell small-3 large-2 text-center" style="background-color: #edc7b7; font-size: 22px; border: 1px solid #ac3b61"><a href="fun.html"><b>Fun Stuff!</b></a></div>
-            </div>
-            <div class="grid-x grid-padding-x">
-                <div class="cell small-12 medium-12 large-12" style="background-color: #fef4f1; font-size: xx-large;">
-                    <p class="text-center"><b>Projects</b></p>
+    <div class="off-canvas-wrapper hide-for-medium">
+        <!-- Your menu or Off-canvas content goes here -->
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+            <!-- Close button -->
+            <button class="close-button" aria-label="Close menu" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+            <!-- Menu -->
+            <ul class="vertical menu">
+                <li><a href="index.html"><b>Homepage</b></a></li>
+                <li><a href="resume.html"><b>Resume</b></a></li>
+                <li><a href="projects.html"><b>Projects</b></a></li>
+                <li><a href="fun.html"><b>Fun Stuff!</b></a></li>
+            </ul>
+        </div>
+        <div>
+            <!-- main content within a `grid-container` -->
+            <div class="grid-container">
+                <div class="grid-x grid-padding-x">
+                    <button type="button" class="menu-icon" data-toggle="offCanvas"></button>
                 </div>
             </div>
         </div>
     </div>
+    <div class="show-for-medium">
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+                <div class="cell small-3 large-6" style="background-color: #edc7b7; border: 1px solid #ac3b61" ><h4><b>Alina Kanayinkal</b></h4></div>
+                <div class="cell small-3 large-2 text-center" style="background-color: #edc7b7; font-size: 1.5rem; border: 1px solid #ac3b61"><a href="index.html"><b>Homepage</b></a></div>
+                <div class="cell small-3 large-2 text-center" style="background-color: #edc7b7; font-size: 1.5rem; border: 1px solid #ac3b61"><a href="resume.html"><b>Resume</b></a></div>
+                <div class="cell small-3 large-2 text-center" style="background-color: #edc7b7; font-size: 1.5rem; border: 1px solid #ac3b61"><a href="fun.html"><b>Fun Stuff!</b></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="hide-for-medium">
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+                <div class="cell small-12 text-center" style="background-color: #edc7b7; border: 1px solid #ac3b61" ><h2><b>Alina Kanayinkal</b></h2></div>
+            </div>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+            <!-- Intro to Projects -->
+            <div class="cell small-1 medium-1 large-1" style="background-color: #fef4f1; font-size: 1.1rem;">
+                <p></p>
+            </div>
+            <div class="cell small-10 medium-10 large-10 text-center" style="background-color: #fef4f1; font-size: 2rem; border-bottom: 1px solid #123c69;">
+                <p><b>Projects (as of October 2022)</b></p> 
+            </div>
+            <div class="cell small-1 medium-1 large-1" style="background-color: #fef4f1; font-size: 1.1rem;">
+                <p></p>
+            </div>
+
+            <!-- first project -->
+
+            <div class="cell small-1 medium-1 large-1" style="background-color: #fef4f1; font-size: 1.1rem;">
+                <p></p>
+            </div>
+            <div class="cell small-12 medium-10 large-6" style="background-color: #fef4f1; font-size: 1.1rem; border-bottom: 1px solid #123c69;">
+                <p><b>Addition of Realistic Materials and Textures to Blood Flow Dataset</b>
+                    <ul>
+                        <li>
+                            Created more realistic materials for blood cells and cancer cells for Blood Flow Dataset to create more realistic experience for VR data visualization
+                        </li>
+                        <li>
+                            Blood cells were made to look more soft and have less of a plastic sheen
+                        </li>
+                        <li>
+                            Cancer cells were made to look more rough, disfigured, and sickly instead of a plastic sheen
+                        </li>
+                        <li>
+                            Streamlines were left with a plastic look
+                        </li>
+                        <li>
+                            Blood cells and cancer cells had both a solid material option and a "force" option
+                            <ul>
+                                <li>
+                                    Solid: typical look of cells
+                                </li>
+                                    <ul>
+                                        <li>
+                                            Red blood cells = deep red all over
+                                        </li>
+                                        <li>
+                                            Cancer cells = green all over
+                                        </li>
+                                    </ul>
+                                <li>
+                                    Force: shows effect of force within bloodstream on cells, low to high force
+                                </li>
+                                    <ul>
+                                        <li>
+                                            Red blood cells = deep red to yellow
+                                        </li>
+                                        <li>
+                                            Cancer cells = dark green to yellow
+                                        </li>
+                                    </ul>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <div class="cell medium-1 hide-for-large" style="background-color: #fef4f1; font-size: 1.1rem;">
+                <p></p>
+            </div>
+            <div class="cell small-12 medium-12 large-4 text-center" style="background-color: #123c69;">
+                <img src="images/bloodcell_force.jpg" alt="Blood Cell Data with Force Colors"/>
+                <img src="images/bloodcell_solid.jpg" alt="Blood Cell Data with Solid Colors"/>
+            </div>
+            <div class="cell large-1 show-for-large" style="background-color: #fef4f1; font-size: 1.1rem;">
+                <p></p>
+            </div>
+            
+            <!-- second project -->
+
+            <div class="cell small-1 medium-1 large-1" style="background-color: #fef4f1; font-size: 1.1rem;">
+                <p></p>
+            </div>
+            <div class="cell small-12 medium-10 large-6" style="background-color: #fef4f1; font-size: 1.1rem; border-bottom: 1px solid #123c69;">
+                <p><b>Creation of Website for UST Water Week 2021 with Markdown Files</b>
+                    <ul>
+                        <li>
+                            Used a combination of Markdown and HTML to create a website on GitHub
+                        </li>
+                        <li>
+                            Website features
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <div class="cell medium-1 hide-for-large" style="background-color: #fef4f1; font-size: 1.1rem;">
+                <p></p>
+            </div>
+            <div class="cell small-12 medium-12 large-4 text-center" style="background-color: #123c69;">
+                <img src="images/bloodcell_force.jpg" alt="Blood Cell Data with Force Colors"/>
+                <img src="images/bloodcell_solid.jpg" alt="Blood Cell Data with Solid Colors"/>
+            </div>
+            <div class="cell large-1 show-for-large" style="background-color: #fef4f1; font-size: 1.1rem;">
+                <p></p>
+            </div>
+
+
+        </div>
+    </div>
+</div>
 
 <!-- include before closing <body> tag -->
 <script src="js/vendor.js"></script>
