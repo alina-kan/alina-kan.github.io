@@ -69,7 +69,7 @@
                     <div class="cell small-1 medium-1 large-1">
                         <p></p>
                     </div>
-                    <div class="cell small-12 medium-10 large-6" style="border-bottom: 0.08rem solid #123c69;">
+                    <div class="cell small-12 medium-10 large-4" style="border-bottom: 0.08rem solid #123c69;">
                         <p><b>Addition of Realistic Materials and Textures to Blood Flow Dataset</b>
                             <ul>
                                 <li>
@@ -112,12 +112,19 @@
                                     </ul>
                                 </li>
                             </ul>
+                            Access project <a href="https://argonne-lcf.github.io/cinema-ods/" target="_blank"><b>here</b></a>
+                            <ul>
+                                <li style="font-size: 0.8rem;">
+                                    You will have to paste in this link to see RBC data: https://gliese.cs.stthomas.edu:8008/datasets/MicrofluidicCTC.cdb
+                                    
+                                </li>
+                            </ul>
                         </p>
                     </div>
                     <div class="cell medium-1 hide-for-large">
                         <p></p>
                     </div>
-                    <div class="cell small-12 medium-12 large-4 text-center align-center-middle" style="background-color: #123c69;">
+                    <div class="cell small-12 medium-12 large-6 align-center cell-block-container" style="background-color: #fef4f1;">
                         <img src="images/bloodcell_force.jpg" alt="Blood Cell Data with Force Colors"/>
                         <img src="images/bloodcell_solid.jpg" alt="Blood Cell Data with Solid Colors"/>
                     </div>
@@ -130,14 +137,23 @@
                     <div class="cell small-1 medium-1 large-1">
                         <p></p>
                     </div>
-                    <div class="cell small-12 medium-10 large-6" style="border-bottom: 0.08rem solid #123c69;">
+                    <div class="cell small-12 medium-10 large-4" style="border-bottom: 0.08rem solid #123c69;">
                         <p><b>Creation of GUI for VR Application</b>
                             <ul>
                                 <li>
                                     Used WebXR to create a GUI for VR data visualization
                                 </li>
                                 <li>
-                                    
+                                    GUI allows user to switch between different modes/views of data
+                                </li>
+                                <li>
+                                    GUI can also disappear/move around the scene with user input
+                                </li>
+                            </ul>
+                            Access project <a href="https://argonne-lcf.github.io/cinema-ods/" target="_blank"><b>here</b></a>
+                            <ul>
+                                <li style="font-size: 0.8rem;">
+                                    You will have to paste in this link to see RBC data: https://gliese.cs.stthomas.edu:8008/datasets/MicrofluidicCTC.cdb
                                 </li>
                             </ul>
                         </p>
@@ -145,9 +161,69 @@
                     <div class="cell medium-1 hide-for-large">
                         <p></p>
                     </div>
-                    <div class="cell small-12 medium-12 large-4 text-center" style="background-color: #123c69;">
-                        <img src="images/bloodcell_force.jpg" alt="Blood Cell Data with Force Colors"/>
-                        <img src="images/bloodcell_solid.jpg" alt="Blood Cell Data with Solid Colors"/>
+                    <div class="cell small-12 medium-12 large-6 align-center cell-block-container" style="background-color: #fef4f1;">
+                        <img src="images/gui_blood_flow.png" alt="GUI in Blood Flow Data"/>
+                    </div>
+                    <div class="cell large-1 show-for-large">
+                        <p></p>
+                    </div>
+
+                    <!-- third project -->
+
+                    <div class="cell small-1 medium-1 large-1">
+                        <p></p>
+                    </div>
+                    <div class="cell small-12 medium-10 large-4" style="border-bottom: 0.08rem solid #123c69;">
+                        <p><b>Workflow to Create High Quality Visualizations of Large Scale Datasets</b>
+                            <ul>
+                                <li>
+                                    Used MPI, OpenEXR, and IceT to create high quality images of large scale datasets for visualization
+                                    <ul>
+                                        <li style="font-size: 1rem;">
+                                            MPI: Message Passing Interface, used for parallel programming for faster rendering
+                                        </li>
+                                        <li style="font-size: 1rem;">
+                                            OpenEXR: allows for creation of EXR files, which are HDR image file with multiple channels
+                                        </li>
+                                        <li>
+                                            IceT: 3D Image Compositor, uses object-space compositing to create images with depth information
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Workflow Process:
+                                    <ul>
+                                        <li>
+                                            Start with Python render script to create scene
+                                        </li>
+                                        <li>
+                                            3D geometry is split across ranks, rendered, and an EXR file of each result is created
+                                        </li>
+                                        <li>
+                                            EXR files are rendered as partial images
+                                        </li>
+                                        <li>
+                                            Partial images are composited into final image on one rank
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Can be used to create omnidirectional images
+                                </li>
+                                <li>
+                                    Data featured here is graphene superlubricity (molecular dynamics) data from <a href="https://www.anl.gov/" target="_blank">Argonne National Laboratory</a>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="cell medium-1 hide-for-large">
+                        <p></p>
+                    </div>
+                    <div class="cell small-12 medium-12 large-6 align-center cell-block-container" style="background-color: #fef4f1;">
+                        <img src="images/workflow.png" alt="Flowchart of Workflow"/>
+                        <img src="images/exr_layers.png" alt="EXR Files as Layers of Final Image"/>
+                        <img src="images/final_image.png" alt="Final Image"/>
+
                     </div>
                     <div class="cell large-1 show-for-large">
                         <p></p>
