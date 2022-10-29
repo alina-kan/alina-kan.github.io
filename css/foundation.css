@@ -22,16 +22,6 @@ body, html {
   height: 100%;
 }
 
-.bg-container {
-  background-image: url("../images/aesthetic-clouds-and-distant-crescent-moon.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: cover;
-  height: cover; 
-  min-height: 100%;
-}
-
 body {
   margin: 0; }
 
@@ -193,11 +183,11 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #766a86;
+  background: #c3aed5;
   font-family: "Calisto MT", "Times New Roman", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
-  color: #123c69;
+  color: #8576a9;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -576,7 +566,7 @@ p {
   font-size: inherit;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
-  color: #123c69;
+  color: #6f6190;
 }
 
 em,
@@ -928,7 +918,7 @@ ul.no-bullet, ol.no-bullet {
   min-height: 0px;
   min-width: 0px;
   width: 100%;
-  background-color: #fef4f1;
+  background-color: #ffeeea;
   font-size: 1.1rem;
 }
   .cell.auto {
